@@ -1,0 +1,72 @@
+{
+  "store.home": {
+    "blocks": [
+      "responsive-layout.desktop",
+      "responsive-layout.mobile"
+    ]
+  },
+  "rich-text": {
+    "props": {
+      "text": "VTEX IO Challenge",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-heading-1"
+    }
+  },
+  "responsive-layout.desktop": {
+    "children": [
+      "rich-text",
+      "flex-layout.row#shelf-1"
+    ]
+  },
+  "responsive-layout.mobile": {
+    "children": [
+      "rich-text",
+      "flex-layout.row#shelf-1"
+    ]
+  },
+  "flex-layout.row#shelf-1": {
+    "children": [
+      "list-context.product-list#demo1"
+    ],
+    "props": {
+      "blockClass": [
+        "shelf-1"
+      ]
+    }
+  },
+  "list-context.product-list#demo1": {
+    "props": {
+      "collection": "138",
+      "hideUnavailableItems": true
+    },
+    "blocks": [
+      "product-summary.shelf#demo1"
+    ],
+    "children": [
+      "slider-layout#product-shelf"
+    ]
+  },
+  "product-summary.shelf#demo1": {
+    "children": [
+      "product-summary-name",
+      "product-summary-image",
+      "product-summary-space",
+      "product-summary-price",
+      "product-summary-buy-button"
+    ]
+  },
+  "slider-layout#product-shelf": {
+    "props": {
+      "label": "Native Shelf",
+      "itemsPerPage": {
+        "desktop": 4,
+        "mobile": 2
+      },
+      "centerMode": {
+        "mobile": "to-the-left",
+        "desktop": "to-the-left"
+      }
+    }
+  }
+}
