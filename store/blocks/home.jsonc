@@ -16,13 +16,16 @@
   "responsive-layout.desktop": {
     "children": [
       "rich-text",
-      "flex-layout.row#shelf-1"
+      "flex-layout.row#shelf-1",
+      "flex-layout.row#shelf-2"
     ]
   },
   "responsive-layout.mobile": {
     "children": [
       "rich-text",
-      "flex-layout.row#shelf-1"
+      "flex-layout.row#shelf-1",
+      "rich-text",
+      "flex-layout.row#shelf-2"
     ]
   },
   "flex-layout.row#shelf-1": {
@@ -32,6 +35,16 @@
     "props": {
       "blockClass": [
         "shelf-1"
+      ]
+    }
+  },
+  "flex-layout.row#shelf-2": {
+    "children": [
+      "custom-slider"
+    ],
+    "props": {
+      "blockClass": [
+        "shelf-2"
       ]
     }
   },

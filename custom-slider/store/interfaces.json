@@ -1,0 +1,6 @@
+{
+    "custom-slider": {
+       "component": "CustomSlider",
+       "render": "lazy"
+     }
+   }

@@ -1,0 +1,10 @@
+query productsCollection($collection: String){
+  products(collection: $collection){
+    productName,
+    priceRange{
+      sellingPrice{
+        lowPrice
+      },
+    }
+  }
+}
