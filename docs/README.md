@@ -1,6 +1,6 @@
-# Minimum Boilerplate Theme
+# VTEX IO CHALLENGE Theme
 
-The minimum Boilerplate Theme is basic store front model based on the VTEX IO Store Framework.
+This project uses the minimum Boilerplate Theme as its basic store front model.
 
 It should be used only when you want to start a new store theme without any pre-set configurations, as is the case with [Store Theme](https://github.com/vtex-apps/store-theme).
 
