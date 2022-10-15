@@ -44,5 +44,5 @@ Ao executar `vtex list`, você pode verificar se algum tema está instalado.
 Portanto, se você encontrá-lo na lista do aplicativo, copie seu nome e use-o junto com o comando `vtex uninstall`. Por exemplo:
 
 ```json
-vtex desinstalar vtex.store-theme
+vtex uninstall vtex.store-theme
 ```
