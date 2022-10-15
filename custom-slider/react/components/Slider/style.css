@@ -1,0 +1,35 @@
+.sliderContainer {
+    display:flex;
+    flex-direction: column;
+}
+
+.formContainer{
+    width: 100%
+}
+.formContent{
+    max-width: 1250px;
+    margin: 1rem auto;
+    padding: 0 2rem
+}
+
+.formInputText{
+    height: 3rem;
+    padding: .5rem;
+    margin-right: 5px;
+    border: none;
+    border-bottom: solid .1rem #424242;
+    background-color: transparent;
+    width: 80%
+}
+
+.formInputText:focus{
+    border: none;
+    border-bottom: solid .1rem #424242;
+}
+.formInputSubmit{
+    height: 3rem;
+    width: calc(20% - 20px);
+}
+.formInputSubmit:hover{
+    cursor:pointer;
+}

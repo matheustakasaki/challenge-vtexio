@@ -1,5 +1,9 @@
 {
   "store.home": {
+    "parent": {
+      "header": "header#empty",
+      "footer": "footer#empty"
+    },
     "blocks": [
       "responsive-layout.desktop",
       "responsive-layout.mobile"
@@ -13,16 +17,44 @@
       "font": "t-heading-1"
     }
   },
+  "rich-text#shelf-1": {
+    "props": {
+      "text": "Nativo",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "font": "t-heading-3"
+    }
+  },
+  "rich-text#shelf-2": {
+    "props": {
+      "text": "Customizado",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "font": "t-heading-3"
+    }
+  },
   "responsive-layout.desktop": {
     "children": [
-      "rich-text",
-      "flex-layout.row#shelf-1"
+      "flex-layout.row#shelf-group"
     ]
   },
   "responsive-layout.mobile": {
     "children": [
+      "flex-layout.row#shelf-group"
+    ]
+  },
+  "flex-layout.row#shelf-group": {
+    "children": [
+      "flex-layout.col#shelf-group"
+    ]
+  },
+  "flex-layout.col#shelf-group": {
+    "children": [
       "rich-text",
-      "flex-layout.row#shelf-1"
+      "rich-text#shelf-1",
+      "flex-layout.row#shelf-1",
+      "rich-text#shelf-2",
+      "flex-layout.row#shelf-2"
     ]
   },
   "flex-layout.row#shelf-1": {
@@ -30,8 +62,19 @@
       "list-context.product-list#demo1"
     ],
     "props": {
+      "preventHorizontalStretch": true,
       "blockClass": [
         "shelf-1"
+      ]
+    }
+  },
+  "flex-layout.row#shelf-2": {
+    "children": [
+      "custom-slider"
+    ],
+    "props": {
+      "blockClass": [
+        "shelf-2"
       ]
     }
   },
@@ -49,9 +92,8 @@
   },
   "product-summary.shelf#demo1": {
     "children": [
-      "product-summary-name",
       "product-summary-image",
-      "product-summary-space",
+      "product-summary-name",
       "product-summary-price",
       "product-summary-buy-button"
     ]
@@ -61,12 +103,11 @@
       "label": "Native Shelf",
       "itemsPerPage": {
         "desktop": 4,
+        "tablet": 3,
         "mobile": 2
       },
-      "centerMode": {
-        "mobile": "to-the-left",
-        "desktop": "to-the-left"
-      }
+      "fullWidth": false,
+      "arrowSize": 20
     }
   }
 }

@@ -1,3 +1,18 @@
+.sliderLayoutContainer {
+  max-width: 1250px;
+}
+
 .paginationDot--isActive {
   background-color: black;
+}
+
+.sliderArrows {
+  background-color: #fff !important;
+  border: solid 1px #424242;
+  border-radius: 100%;
+}
+
+.caretIcon {
+  color: #424242;
+  padding: 0.5rem;
 }/*# sourceMappingURL=vtex.slider-layout.css.map */

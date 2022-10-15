@@ -1,0 +1,33 @@
+
+.containerNormal {
+    margin: 0 4px;
+}
+.imageContainer {
+    border-bottom: 2px solid #f5f5f5;
+}
+
+.nameContainer{
+    justify-content: flex-start;
+    padding: 1rem 0;
+}
+.priceContainer {
+    align-items: flex-start;
+}
+.sellingPrice, .listPrice, .productNameContainer{
+    text-align: left;
+}
+.sellingPrice{
+    font-weight: bold;
+}
+.element {
+    border-radius: 10px;
+    background-color: #fff;
+    margin-bottom: 2rem;
+    padding:0 1rem;
+    justify-content: space-between;
+}
+
+.productBrand , .buyButtonText{
+    font-size: .9rem;
+    font-weight: bold;
+}
