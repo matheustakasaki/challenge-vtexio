@@ -1,7 +1,7 @@
 {
   "vendor": "distribuidorasika",
   "name": "custom-slider",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "title": "Custom Product Slider",
   "description": "Carousel slider responsible for displaying a list of products",
   "builders": {
