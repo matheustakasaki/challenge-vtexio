@@ -12,7 +12,7 @@ na pasta custom-slider.
 1. Crie um workspace de desenvolvimento em seu vtex account
 2. Desinstale qualquer outro tema que esteja instalado no workspace atual.
 3. Use o comando `vtex install distribuidorasika.test-theme`
-4. Utilize o comando `vtex browse para verificar as alterações`
+4. Utilize o comando `vtex browse` para verificar as alterações
 
 ### Editando o Tema
 
