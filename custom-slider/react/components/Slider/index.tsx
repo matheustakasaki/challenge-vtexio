@@ -25,8 +25,6 @@ const Custom = () => {
     }
 
     useEffect(() => {
-
-        console.log(productCollection)
     }, [collectionId])
     return (
 
