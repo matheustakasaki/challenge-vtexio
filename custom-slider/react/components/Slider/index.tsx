@@ -19,10 +19,9 @@ const Custom = () => {
         fetch(`api/catalog_system/pub/products/search/${collectionId}?map=productClusterIds`)
             .then(response => response.json())
             .then((data) => {
-                console.log('DENTRO DO FETCH', data);
-
                 setProductCollection(data);
             })
+            .catch(error => console.log(error))
     }
 
     useEffect(() => {
