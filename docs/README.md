@@ -7,12 +7,18 @@ na pasta custom-slider.
 
 ![store-theme-default](/docs/preview.png)
 
-## Como utilizar?
+## Como Instalar?
 
 1. Crie um workspace de desenvolvimento em seu vtex account
 2. Desinstale qualquer outro tema que esteja instalado no workspace atual.
 3. Use o comando `vtex install distribuidorasika.test-theme`
 4. Utilize o comando `vtex browse` para verificar as alterações
+
+## Utilizando o Tema
+
+Existem duas vitrines: uma construída 100% com componentes VTEX e outra desenvolvida de maneira customizada utilizando React.
+
+Para visualizar a prateleira customizada, é necessário inserir no campo de busca um id de coleção válido.
 
 ### Editando o Tema
 
