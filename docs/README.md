@@ -1,30 +1,26 @@
 # VTEX IO CHALLENGE Theme
 
-This project uses the minimum Boilerplate Theme as its basic store front model.
-
-It should be used only when you want to start a new store theme without any pre-set configurations, as is the case with [Store Theme](https://github.com/vtex-apps/store-theme).
-
-While Store Theme gives developers a ready-to-go default store front structure, the Minimum Boilerplate Theme will enable you to build you store freely from scratch.
+Este projeto usa o tema Boilerplate mínimo como modelo básico de loja e também o react-app-template como template para o app custom que se encontra
+na pasta custom-slider.
 
 ## Preview
 
 ![store-theme-default](/docs/preview.png)
 
-## Configuration
+## Como utilizar?
 
-### Step 1 - Basic setup
+1. Crie um workspace de desenvolvimento em seu vtex account
+2. Desinstale qualquer outro tema que esteja instalado no workspace atual.
+3. Use o comando `vtex install distribuidorasika.test-theme`
+4. Utilize o comando `vtex browse para verificar as alterações`
 
-### Step 2 - Cloning the Minimum Boilerplate Theme repository
+### Editando o Tema
 
-[Clone](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository) this repository to your local files to be able to effectively start working on it.
+Se for do seu interesse, você pode clonar este repositório e alterar o código como desejar.
 
-Then, access the repository's directory using your terminal.
+Depois de clonar o repositório com `git clone`, é hora de editar o arquivo `manifest.json`.
 
-### Step 3 - Editing the `Manifest.json`
-
-Once in the repository directory, it is time to edit the Minimum Boilerplate `manifest.json` file.
-
-Once you are in the file, you must replace the `vendor` and `account` values. `vendor` is the account name you are working on and `account` is anything you want to name your theme. For example:
+Uma vez dentro do arquivo, você deve substituir os valores `vendor` e `account`. `vendor` é o nome da conta na qual você está trabalhando e `account` é qualquer coisa que você queira nomear seu tema. Por exemplo:
 
 ```json
 {
@@ -33,30 +29,20 @@ Once you are in the file, you must replace the `vendor` and `account` values. `v
 }
 ```
 
-### Step 4 - Installing required apps
+### Instalando apps obrigatórios
 
-In order to use Store Framework and work on your store theme, it is needed to have both `vtex.store-sitemap` and `vtex.store` installed.
+É necessário ter ambos `distribuidorasika.custom-slider`, `vtex.store-sitemap` e `vtex.store` instalados
+Execute `vtex list` e verifique se esses aplicativos já estão instalados.
+If they aren't, run the following command to install them: `vtex install vtex.store-sitemap vtex.store distribuidorasika.custom-slider -f`
 
-Run `vtex list` and check whether those apps are already installed.
+### Desinstalando temas existentes
 
-If they aren't, run the following command to install them: `vtex install vtex.store-sitemap vtex.store -f`
+Ao executar `vtex list`, você pode verificar se algum tema está instalado.
 
-### Step 5 - Uninstalling any existing theme
+É comum já ter um `vtex.store-theme` instalado quando você inicia o processo de desenvolvimento da frente da loja.
 
-By running `vtex list`, you can verify if any theme is installed.
-
-It is common to already have a `vtex.store-theme` installed when you start the store's front development process.
-
-Therefore, if you find it in the app's list, copy its name and use it together with the command `vtex uninstall`. For example:
+Portanto, se você encontrá-lo na lista do aplicativo, copie seu nome e use-o junto com o comando `vtex uninstall`. Por exemplo:
 
 ```json
-vtex uninstall vtex.store-theme
+vtex desinstalar vtex.store-theme
 ```
-
-### Step 6- Run and preview your store
-
-Then time has come to upload all the changes you made in your local files to the platform. For that, use the `vtex link` command.
-
-If the process runs without any errors, the following message will be displayed: `App linked successfully`. Then, run the `vtex browse` command to open a browser window having your linked store in it.
-
-This will enable you to see the applied changes in real time, through the account and workspace in which you are working.
